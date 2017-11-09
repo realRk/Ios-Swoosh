@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		509C6E1A1FB46D0C00FE9FD5 /* ButtonBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C6E191FB46D0C00FE9FD5 /* ButtonBorder.swift */; };
 		50EB15A11FB43C9D00FA73A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EB15A01FB43C9D00FA73A0 /* AppDelegate.swift */; };
 		50EB15A31FB43C9D00FA73A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EB15A21FB43C9D00FA73A0 /* ViewController.swift */; };
 		50EB15A61FB43C9D00FA73A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EB15A41FB43C9D00FA73A0 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		509C6E191FB46D0C00FE9FD5 /* ButtonBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBorder.swift; sourceTree = "<group>"; };
 		50EB159D1FB43C9D00FA73A0 /* swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swoosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50EB15A01FB43C9D00FA73A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50EB15A21FB43C9D00FA73A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		509C6E181FB46CC100FE9FD5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				509C6E191FB46D0C00FE9FD5 /* ButtonBorder.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		50EB15941FB43C9D00FA73A0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		50EB159F1FB43C9D00FA73A0 /* swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				509C6E181FB46CC100FE9FD5 /* View */,
 				50EB15A01FB43C9D00FA73A0 /* AppDelegate.swift */,
 				50EB15A21FB43C9D00FA73A0 /* ViewController.swift */,
 				50EB15A41FB43C9D00FA73A0 /* Main.storyboard */,
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50EB15A31FB43C9D00FA73A0 /* ViewController.swift in Sources */,
+				509C6E1A1FB46D0C00FE9FD5 /* ButtonBorder.swift in Sources */,
 				50EB15A11FB43C9D00FA73A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
