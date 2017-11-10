@@ -9,7 +9,20 @@
 import UIKit
 
 class LeagueVC: UIViewController {
+    
+    var player:Player!
+    //we dont wan't to run this code unless there is a player that's why it is declared as Implicit
 
+    @IBAction func onCoEdSelect(_ sender: Any) {
+        onButtonSelected(desireLg: "CoEd")
+    }
+    @IBAction func onWomenSelect(_ sender: Any) {
+        onButtonSelected(desireLg: "Women")
+    }
+    @IBAction func onMenSelect(_ sender: Any) {
+        onButtonSelected(desireLg: "Men")
+    }
+    @IBOutlet weak var onNextTap: UIButton!
     
     @IBAction func onNextClick(_ sender: Any) {
         performSegue(withIdentifier: "leagueToskill", sender: self)
@@ -17,8 +30,22 @@ class LeagueVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //create a structure variable to access structure elements
+        
+        player = Player()
+        //that's how we  initialize a structure
+        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    func onButtonSelected(desireLg:String){
+        //passed value is stored in structure
+        player.desiredLeague = desireLg
+        //then button is activated
+        onNextTap.isEnabled = true
     }
 
     override func didReceiveMemoryWarning() {

@@ -107,6 +107,9 @@
                                         <state key="normal" title="MEN">
                                             <color key="titleColor" red="0.97663583740000004" green="1" blue="0.96641924810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMenSelect:" destination="6aT-zx-uQm" eventType="touchUpInside" id="t3d-o3-utp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYH-Bn-PTM">
                                         <rect key="frame" x="0.0" y="80" width="404" height="73"/>
@@ -115,6 +118,9 @@
                                         <state key="normal" title="WOMENS">
                                             <color key="titleColor" red="0.97663583740000004" green="1" blue="0.96641924810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomenSelect:" destination="6aT-zx-uQm" eventType="touchUpInside" id="U7r-Bv-nk2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYX-Vm-Hjm">
                                         <rect key="frame" x="0.0" y="160" width="404" height="73"/>
@@ -123,10 +129,13 @@
                                         <state key="normal" title="CO-eD">
                                             <color key="titleColor" red="0.97663583740000004" green="1" blue="0.96641924810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoEdSelect:" destination="6aT-zx-uQm" eventType="touchUpInside" id="bge-8H-OZu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqR-EM-bPF">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqR-EM-bPF">
                                 <rect key="frame" x="0.0" y="665" width="414" height="55"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.54483934860000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="31"/>
@@ -178,6 +187,7 @@
                         <viewLayoutGuide key="safeArea" id="0WN-Yg-mds"/>
                     </view>
                     <connections>
+                        <outlet property="onNextTap" destination="BqR-EM-bPF" id="3f8-Dr-PT0"/>
                         <segue destination="zTV-L6-Jth" kind="show" identifier="leagueToskill" id="VZ0-83-eeH"/>
                     </connections>
                 </viewController>
