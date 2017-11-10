@@ -9,9 +9,9 @@
 import UIKit
 
 class LeagueVC: UIViewController {
-    
+    //store a player variable in the LeagueVC
     var player:Player!
-    //we dont wan't to run this code unless there is a player that's why it is declared as Implicit
+    //we dont want to run this code unless there is a player that's why it is declared as Implicit
 
     @IBAction func onCoEdSelect(_ sender: Any) {
         onButtonSelected(desireLg: "CoEd")
